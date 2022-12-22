@@ -7,7 +7,7 @@ param (
 )
 
 # Repository dosyasını indirin
-$RepoUrl = "http://example.com/repository.xml"
+$RepoUrl = "https://raw.githubusercontent.com/Teknoist/iso-downloader/main/repo.xml"
 $LocalRepoFile = ".\repo.xml"
 Invoke-WebRequest -Uri $RepoUrl -OutFile $LocalRepoFile
 
