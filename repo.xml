@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<repository>
+  <iso name="ubuntu" version="20.04" link="http://download.ubuntu.com/latest/ubuntu-20.04.iso"/>
+  <iso name="ubuntu" version="20.10" link="http://download.ubuntu.com/latest/ubuntu-20.10.iso"/>
+  <iso name="windows" version="10" link="http://download.microsoft.com/latest/windows-10.iso"/>
+  <iso name="fedora" version="32" link="http://download.fedoraproject.org/latest/fedora-32.iso"/>
+</repository>
