@@ -10,7 +10,7 @@ parser.add_argument('-d', '--distro', required=True)
 args = parser.parse_args()
 
 # 2. repo.xml dosyasını indirin ve ağaç yapısına dönüştürün
-url = 'https://example.com/repo.xml'
+url = 'https://raw.githubusercontent.com/Teknoist/iso-downloader/main/repo.xml'
 xml_data = urllib.request.urlopen(url).read()
 root = ET.fromstring(xml_data)
 
