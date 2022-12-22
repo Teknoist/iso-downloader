@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository>
+  <package>
+    <name>Ubuntu</name>
+    <version>20.04</version>
+    <download_url>https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64</download_url>
+  </package>
+  <package>
+    <name>LinuxMint</name>
+    <version>21.1</version>
+    <download_url>https://mirrors.layeronline.com/linuxmint/stable/21.1/linuxmint-21.1-cinnamon-64bit.iso</download_url>
+  </package>
+  <package>
+    <name>Gparted</name>
+    <version>1.4</version>
+    <download_url>https://downloads.sourceforge.net/gparted/gparted-live-1.4.0-6-amd64.iso</download_url>
+  </package>
+</repository>
