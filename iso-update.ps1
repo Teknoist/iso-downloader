@@ -1,9 +1,12 @@
+Install-Module -Name Invoke-WebRequest -Force
+Install-Module -Name XML -Force
+
 param (
    [string]$ISOFileName
 )
 
 # Repository dosyasını indirin ve içeriğini okuyun
-$RepoUrl = "http://example.com/repository.xml"
+$RepoUrl = "https://raw.githubusercontent.com/Teknoist/iso-downloader/main/repo.xml"
 $LocalRepoFile = ".\repo.xml"
 Invoke-WebRequest -Uri $RepoUrl -OutFile $LocalRepoFile
 $RepoContent = Get-Content $LocalRepoFile
