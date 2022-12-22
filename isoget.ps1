@@ -3,7 +3,7 @@ Install-Module -Name XML -Force
 
 param (
    [string]$install,
-   [string]$Ver
+   [string]$ver
 )
 
 # Repository dosyasını indirin
@@ -16,8 +16,8 @@ $RepoFile = ".\repo.xml"
 $RepoContent = Get-Content $RepoFile
 
 # ISO dosyasını arayın ve linkini alın
-$ISO = Select-Xml -Content $RepoContent -XPath "//iso[name='$install' and version='$Ver']"
+$ISO = Select-Xml -Content $RepoContent -XPath "//iso[name='$install' and version='$ver']"
 $ISOLink = $ISO.Node.link.InnerText
 
 # ISO dosyasını indirin
-Invoke-WebRequest -Uri $ISOLink -OutFile "$ISOFileName-$Version.iso"
+Invoke-WebRequest -Uri $ISOLink -OutFile "$install-$ver.iso"
