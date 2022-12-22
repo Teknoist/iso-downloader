@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 import urllib.request
 
 # 1. repo.xml dosyasını indirin ve ağaç yapısına dönüştürün
-url = 'https://example.com/repo.xml'
+url = 'https://github.com/Teknoist/iso-downloader/blob/main/repo.xml'
 xml_data = urllib.request.urlopen(url).read()
 root = ET.fromstring(xml_data)
 
